@@ -1,3 +1,3 @@
 # RosaPerezResume
 resume
-- Coming Soon!
+https://paintedlbird7.github.io/RosaPerezResume/
