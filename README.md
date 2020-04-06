@@ -1,3 +1,3 @@
-# porfolio
+# portfolio
 
 https://rosapérez.com/
