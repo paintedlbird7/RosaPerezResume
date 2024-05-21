@@ -1,3 +1,3 @@
 # portfolio
 
-https://rosapérez.com/
+www.rosapérez.com
