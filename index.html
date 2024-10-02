@@ -1,165 +1,166 @@
 <!DOCTYPE HTML>
-<!--
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
-	<title>Rosa Perez Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+    <title>Rosa Perez Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Custom styles for image grid */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px; /* Space between items */
+        }
+
+        .image-item {
+            flex: 1 1 calc(30% - 20px);
+            box-sizing: border-box;
+            margin-bottom: 20px; /* Space below each image */
+        }
+
+        .image-item img {
+            width: 100%; /* Makes images responsive */
+            height: auto; /* Maintains aspect ratio */
+            transition: transform 0.3s; /* Smooth effect */
+        }
+
+        .image-item img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        @media (max-width: 768px) {
+            .image-item {
+                flex: 1 1 calc(100% - 20px); /* Full width on small screens */
+            }
+        }
+    </style>
 </head>
 
 <body class="is-preload">
 
-	<!-- Wrapper-->
-	<div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-		<!-- Nav -->
-		<nav id="nav">
-			<a href="#" class="icon fa-home"><span>Home</span></a>
-			<a href="#work" class="icon fa-folder"><span>Work</span></a>
-			<!-- <a href="#work" class="icon fa-folder"><span>Mobile Dev</span></a>
-			<a href="#work" class="icon fa-folder"><span>Graphic Design</span></a> -->
-			<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-			<a href="https://github.com/paintedlbird7" class="icon fa-github"><span>Github</span></a>
-		</nav>
+        <!-- Nav -->
+        <nav id="nav">
+            <a href="#" class="icon fa-home"><span>Home</span></a>
+            <a href="#work" class="icon fa-folder"><span>Work</span></a>
+            <a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+            <a href="https://github.com/paintedlbird7" class="icon fa-github"><span>Github</span></a>
+        </nav>
 
-		<!-- Main -->
-		<div id="main">
+        <!-- Main -->
+        <div id="main">
 
-			<!-- Me -->
-			<article id="home" class="panel intro">
+            <!-- Me -->
+            <article id="home" class="panel intro">
 				<header>
+					<img src="images/RP_my_logo.jpg" alt="Rosa Perez Logo" style="max-width: 100%; height: auto; margin-bottom: 10px;">
 					<h1>Rosa Perez</h1>
-					<p> React Native + Full Stack Developer</p>
-					<p>Creative and Intelligent developer improving UX one line of code at a time. Skills: JavaScript,
-						React, Node JS, HTML/CSS</p>
-
+					<p></p>
 				</header>
-				<a href="#work" class="jumplink pic">
-					<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
-					<!-- <img src="images/RP_my_logo.jpg" alt="logo" /> -->
-				</a>
-			</article>
+				
+                <a href="#work" class="jumplink pic">
+                    <span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+                </a>
+            </article>
 
+            <!-- Work -->
+            <article id="work" class="panel">
+                <header>
+					<h3>~Rosa Perez: software engineer emphasis on React Native~</h3>
+                    <p>Click on the image below to view website or app.</p>
+                </header>
+                <section>
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <a href="link1" class="image fit"><img src="images/Inventory_Books_App_.png" alt="Android Books App"></a>
+                            <p>Android Books App</p>
+                        </div>
+                        <div class="image-item">
+                            <a href="https://github.com/paintedlbird7/books" class="image fit"><img src="images/Inventory Books App.gif" alt="Books App GIF"></a>
+                            <p>Java, XML, Android Studio</p>
+                        </div>
+                        <div class="image-item">
+                            <a href="https://github.com/paintedlbird7/JustJava" class="image fit"><img src="images/Android JustJava gif recording .gif" alt="Android Coffee Ordering"></a>
+                            <p>Android Coffee Ordering</p>
+                        </div>
+                        <div class="image-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.frida.android.quizapp&hl=en" class="image fit"><img src="images/Android_frida.png" alt="Frida Kahlo Android App"></a>
+                            <p>Frida Kahlo Android App</p>
+                        </div>
+                        <div class="image-item">
+                            <a href="" class="image fit"><img src="images/TipCalculator2.gif" alt="Tip Calculator iOS App"></a>
+                            <p>Tip Calculator iOS App</p>
+                        </div>
+                        <div class="image-item">
+                            <a href="" class="image fit"><img src="images/search-box3.gif" alt="Search Box"></a>
+                            <p>Search-Box</p>
+                        </div>
+                        <iframe width="400" height="315" src="https://www.youtube.com/embed/oQoDMhRIatg?si=GeqNtlQ7FAVEBaJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="image-item">
+                            <a href="" class="image fit"><img src="images/HappyBirthday_.jpg" alt="Happy Birthday App"></a>
+                            <p>Happy Birthday App</p>
+                        </div>
+                        <div class="image-item">
+                            <a href="https://guidr-marketing.netlify.app/about" class="image fit"><img src="images/Guidr_nav.png" alt="Guidr Navigation"></a>
+                            <p>React, HTML, CSS</p>
+                        </div>
+                        <div class="image-item">
+                            <a href="https://guidr-marketing.netlify.app/about" class="image fit"><img src="images/Guidr_about.png" alt="Guidr About"></a>
+                            <p>Made in React</p>
+                        </div>
+                        <div class="image-item">
+                            <a href="https://guidr-marketing.netlify.app/index.html" class="image fit"><img src="images/Guidr_and_README_md_—_UI-Rosa-Perez_and_Slack_-_Lambda_School_Students.png" alt="Gruidr: A Tour Scheduling App"></a>
+                            <p>Gruidr: A tour scheduling for Tour Guides</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
 
+            <!-- Contact -->
+            <article id="contact" class="panel">
+                <header>
+                    <h2>Contact Me</h2>
+                </header>
+                <form action="https://formspree.io/f/xyzgqpjb" method="POST">
+                    <label>
+                        Your email:
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        Your message:
+                        <textarea name="message" required></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+            </article>
 
+        </div>
 
+        <!-- Footer -->
+        <div id="footer">
+            <ul class="copyright">
+                <li>&copy; Rosa Perez.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
 
-			<!-- Work -->
-			<article id="work" class="panel">
-				<header>
-					<!-- <h1>Rosa Perez</h1>
-					<p>Mobile App + Full Stack Developer</p> -->
-					<p>
-						Click on the image below to view website or app.
-					</p>
-				</header>
-				<section>
-					<div class="row">
+    </div>
 
-						<div class="col-4 col-6-medium col-12-small"> Android Books App
-							<a href="" class="image fit"><img src="images/Inventory_Books_App_.png" alt=""></a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small"> Java, XML, Android Studio
-							<a href="https://github.com/paintedlbird7/books" class="image fit"><img
-									src="images/Inventory Books App.gif" alt=""></a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small"> Android Coffee Ordering
-							<a href="https://github.com/paintedlbird7/JustJava" class="image fit"><img
-									src="images/Android JustJava gif recording .gif" alt=""></a>
-						</div>
-
-						<div class="col-4 col-6-medium col-12-small"> Frida Kahlo Android App
-							<a href="https://play.google.com/store/apps/details?id=com.frida.android.quizapp&hl=en"
-								class="image fit"><img src="images/Android_frida.png" alt="Frida"></a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small"> Tip Calculator iOS App
-							<a href="" class="image fit"><img src="images/TipCalculator2.gif" alt=""></a>
-						</div>
-
-						<div class="col-4 col-6-medium col-12-small"> Search-Box
-							<a href="" class="image fit"><img src="images/search-box3.gif" alt=""></a>
-						</div>
-						<iframe width="400" height="315"
-							src="https://www.youtube.com/embed/oQoDMhRIatg?si=GeqNtlQ7FAVEBaJA"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
-						<div class="col-4 col-6-medium col-12-small"> Happy Birthday App
-							<a href="" class="image fit"><img src="images/HappyBirthday_.jpg" alt=""></a>
-						</div>
-
-						<div class="col-6 col-8-medium col-14-small"> React, HTML, CSS
-							<a href="https://guidr-marketing.netlify.app/about" class="image fit"><img
-									src="images/Guidr_nav.png" alt=""></a>
-						</div>
-						<!-- <div class="col-6 col-8-medium col-14-small"> 
-						<!-- <a href="https://guidr-marketing.netlify.com/index.html" class="image fit"><img src="images/Guidr.gif" alt=""></a> -->
-						<!-- </div> -->
-						<div class="col-4 col-6-medium col-12-small"> Made in React
-							<a href="https://guidr-marketing.netlify.app/about" class="image fit"><img
-									src="images/Guidr_about.png" alt=""></a>
-						</div>
-						<div class="col-8 col-10-medium col-16-small"> Gruidr: A tour scheduling for Tour Guides
-							<a href="https://guidr-marketing.netlify.app/index.html" class="image fit"><img
-									src="images/Guidr_and_README_md_—_UI-Rosa-Perez_and_Slack_-_Lambda_School_Students.png"
-									alt=""></a>
-						</div>
-					</div>
-				</section>
-			</article>
-
-			<!-- Contact -->
-			<article id="contact" class="panel">
-				<header>
-					<h2>Contact Me</h2>
-				</header>
-				<form action="https://formspree.io/f/xyzgqpjb" method="POST">
-					<label>
-						Your email:
-						<input type="email" name="email">
-					</label>
-					<label>
-						Your message:
-						<textarea name="message"></textarea>
-					</label>
-					<!-- your other form fields go here -->
-					<button type="submit">Send</button>
-				</form>
-			</article>
-
-		</div>
-
-		<!-- Footer -->
-		<div id="footer">
-			<ul class="copyright">
-				<li>&copy; Rosa Perez.</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
-		</div>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
-</section>
-</article>
 
 </html>
