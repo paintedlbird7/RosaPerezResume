@@ -27,11 +27,12 @@
         .image-item img {
             width: 100%; /* Makes images responsive */
             height: auto; /* Maintains aspect ratio */
-            transition: transform 0.3s; /* Smooth effect */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth effect */
         }
 
         .image-item img:hover {
             transform: scale(1.05); /* Slight zoom on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
         }
 
         @media (max-width: 768px) {
@@ -40,8 +41,61 @@
             }
         }
 
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%; /* Smaller size for better presentation */
+            max-height: 80vh; /* Limit height */
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        h3 {
+            font-size: 2em; /* Larger font */
+            margin-bottom: 10px; /* Space below */
+            border-bottom: 2px solid #ccc; /* Underline for emphasis */
+        }
+
         .bold {
             font-weight: bold;
+        }
+
+        /* Additional styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #main {
+            padding: 20px; /* Space around main content */
+        }
+
+        .panel {
+            background: #f9f9f9; /* Light gray background */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Inner spacing */
+            margin-bottom: 40px; /* Space between sections */
         }
     </style>
 </head>
@@ -78,57 +132,53 @@
             <!-- Work -->
             <article id="work" class="panel">
                 <header>
-                    <h3>~Rosa Perez: software engineer emphasis on React Native~</h3>
-                    <p>Click on the image below to view website or app.</p>
+                    <h3>~Rosa Perez: Software Engineer (React Native)~</h3>
+                    <p>Click on the image below to view the website or app.</p>
                 </header>
                 <section>
                     <div class="image-grid">
                         <div class="image-item">
-                            <a href="https://github.com/paintedlbird7/books" class="image fit"><img src="images/Inventory_Books_App_.png" alt="Android Books App"></a>
+                            <img src="images/Inventory_Books_App_.png" alt="Android Books App" onclick="openModal('books-app-modal')">
                             <p>Android Books App - <span class="bold">Java, XML, Android Studio</span></p>
                         </div>
                         <div class="image-item">
-                            <a href="https://github.com/paintedlbird7/books" class="image fit"><img src="images/Inventory Books App.gif" alt="Books App GIF"></a>
+                            <img src="images/Inventory Books App.gif" alt="Books App GIF" onclick="openModal('books-app-gif-modal')">
                             <p>Books App GIF - <span class="bold">Java, XML, Android Studio</span></p>
                         </div>
                         <div class="image-item">
-                            <a href="https://github.com/paintedlbird7/JustJava" class="image fit"><img src="images/Android JustJava gif recording .gif" alt="Android Coffee Ordering"></a>
+                            <img src="images/Android JustJava gif recording .gif" alt="Android Coffee Ordering" onclick="openModal('just-java-modal')">
                             <p>Android Coffee Ordering - <span class="bold">Java, Android</span></p>
                         </div>
                         <div class="image-item">
-                            <a href="https://play.google.com/store/apps/details?id=com.frida.android.quizapp&hl=en" class="image fit"><img src="images/Android_frida.png" alt="Frida Kahlo Android App"></a>
+                            <img src="images/Android_frida.png" alt="Frida Kahlo Android App" onclick="openModal('frida-modal')">
                             <p>Frida Kahlo Android App - <span class="bold">Java, XML, Android Studio</span></p>
                         </div>
                         <div class="image-item">
-                            <a href="" class="image fit"><img src="images/TipCalculator2.gif" alt="Tip Calculator iOS App"></a>
+                            <img src="images/TipCalculator2.gif" alt="Tip Calculator iOS App" onclick="openModal('tip-calculator-modal')">
                             <p>Tip Calculator iOS App - <span class="bold">Swift, Xcode</span></p>
                         </div>
                         <div class="image-item">
-                            <a href="" class="image fit"><img src="images/search-box3.gif" alt="Search Box"></a>
+                            <img src="images/search-box3.gif" alt="Search Box" onclick="openModal('search-box-modal')">
                             <p>Search-Box - <span class="bold">JavaScript, React Native</span></p>
                         </div>
-                        
-                        <!-- <iframe width="400" height="315" src="https://www.youtube.com/embed/oQoDMhRIatg?si=GeqNtlQ7FAVEBaJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                        
                         <div class="image-item">
-                            <a href="" class="image fit"><img src="images/onboarding.gif" alt="Onboarding"></a>
-                            <p>Search-Box - <span class="bold">JavaScript, React Native</span></p>
+                            <img src="images/onboarding.gif" alt="Onboarding" onclick="openModal('onboarding-modal')">
+                            <p>Onboarding - <span class="bold">JavaScript, React Native</span></p>
                         </div>
-
                         <div class="image-item">
-                            <a href="" class="image fit"><img src="images/HappyBirthday_.jpg" alt="Happy Birthday App"></a>
+                            <img src="images/HappyBirthday_.jpg" alt="Happy Birthday App" onclick="openModal('happy-birthday-modal')">
                             <p>Happy Birthday App - <span class="bold">Java, Android</span></p>
                         </div>
                         <div class="image-item">
-                            <a href="https://guidr-marketing.netlify.app/about" class="image fit"><img src="images/Guidr_nav.png" alt="Guidr Navigation"></a>
+                            <img src="images/Guidr_nav.png" alt="Guidr Navigation" onclick="openModal('guidr-nav-modal')">
                             <p>Guidr Navigation - <span class="bold">React, HTML, CSS</span></p>
                         </div>
                         <div class="image-item">
-                            <a href="https://guidr-marketing.netlify.app/about" class="image fit"><img src="images/Guidr_about.png" alt="Guidr About"></a>
+                            <img src="images/Guidr_about.png" alt="Guidr About" onclick="openModal('guidr-about-modal')">
                             <p>Guidr About - <span class="bold">React</span></p>
                         </div>
                         <div class="image-item">
-                            <a href="https://guidr-marketing.netlify.app/index.html" class="image fit"><img src="images/Guidr_and_README_md_—_UI-Rosa-Perez_and_Slack_-_Lambda_School_Students.png" alt="Gruidr: A Tour Scheduling App"></a>
+                            <img src="images/Guidr_and_README_md_—_UI-Rosa-Perez_and_Slack_-_Lambda_School_Students.png" alt="Gruidr: A Tour Scheduling App" onclick="openModal('guidr-app-modal')">
                             <p>Gruidr: A tour scheduling for Tour Guides - <span class="bold">React, HTML, CSS</span></p>
                         </div>
                     </div>
@@ -164,6 +214,57 @@
 
     </div>
 
+       <!-- Modals -->
+       <div id="books-app-modal" class="modal">
+        <span class="close" onclick="closeModal('books-app-modal')">&times;</span>
+        <img class="modal-content" id="books-app-img" src="images/Inventory Books App.gif" alt="Books App GIF">
+    </div>
+
+    <div id="just-java-modal" class="modal">
+        <span class="close" onclick="closeModal('just-java-modal')">&times;</span>
+        <img class="modal-content" id="just-java-img" src="images/Android JustJava gif recording .gif" alt="Android Coffee Ordering GIF">
+    </div>
+
+    <div id="frida-modal" class="modal">
+        <span class="close" onclick="closeModal('frida-modal')">&times;</span>
+        <img class="modal-content" id="frida-img" src="images/Android_frida.png" alt="Frida Kahlo Android App">
+    </div>
+
+    <div id="tip-calculator-modal" class="modal">
+        <span class="close" onclick="closeModal('tip-calculator-modal')">&times;</span>
+        <img class="modal-content" id="tip-calculator-img" src="images/TipCalculator2.gif" alt="Tip Calculator iOS App GIF">
+    </div>
+
+    <div id="search-box-modal" class="modal">
+        <span class="close" onclick="closeModal('search-box-modal')">&times;</span>
+        <img class="modal-content" id="search-box-img" src="images/search-box3.gif" alt="Search Box GIF">
+    </div>
+
+    <div id="onboarding-modal" class="modal">
+        <span class="close" onclick="closeModal('onboarding-modal')">&times;</span>
+        <img class="modal-content" id="onboarding-img" src="images/onboarding.gif" alt="Onboarding GIF">
+    </div>
+
+    <div id="happy-birthday-modal" class="modal">
+        <span class="close" onclick="closeModal('happy-birthday-modal')">&times;</span>
+        <img class="modal-content" id="happy-birthday-img" src="images/HappyBirthday_.jpg" alt="Happy Birthday App">
+    </div>
+
+    <div id="guidr-nav-modal" class="modal">
+        <span class="close" onclick="closeModal('guidr-nav-modal')">&times;</span>
+        <img class="modal-content" id="guidr-nav-img" src="images/Guidr_nav.png" alt="Guidr Navigation">
+    </div>
+
+    <div id="guidr-about-modal" class="modal">
+        <span class="close" onclick="closeModal('guidr-about-modal')">&times;</span>
+        <img class="modal-content" id="guidr-about-img" src="images/Guidr_about.png" alt="Guidr About">
+    </div>
+
+    <div id="guidr-app-modal" class="modal">
+        <span class="close" onclick="closeModal('guidr-app-modal')">&times;</span>
+        <img class="modal-content" id="guidr-app-img" src="images/Guidr_and_README_md_—_UI-Rosa-Perez_and_Slack_-_Lambda_School_Students.png" alt="Gruidr: A Tour Scheduling App">
+    </div>
+
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
@@ -171,6 +272,24 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        // Close modal when clicking outside of the image
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal(event.target.id);
+            }
+        };
+    </script>
+
 </body>
 
 </html>
+
