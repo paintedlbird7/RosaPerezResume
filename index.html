@@ -110,7 +110,6 @@
             <a href="#" class="icon fa-home"><span>Home</span></a>
             <a href="#work" class="icon fa-folder"><span>Work</span></a>
             <a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-            <a href="#tacotruck" class="icon fa-truck"><span>Taco Truck</span></a>
             <a href="https://github.com/paintedlbird7" class="icon fa-github"><span>Github</span></a>
         </nav>
 
@@ -134,6 +133,7 @@
             <article id="work" class="panel">
                 <header>
                     <h3>~Rosa Perez: Software Engineer (React Native)~</h3>
+            
                 </header>
                 <section>
                     <div class="image-grid">
@@ -165,6 +165,7 @@
                             <img src="images/TipCalculator2.gif" alt="Tip Calculator iOS App" onclick="openModal('tip-calculator-modal')">
                             <p>Tip Calculator iOS App - <span class="bold">Swift, Xcode</span></p>
                         </div>
+                    
                         <div class="image-item">
                             <img src="images/HappyBirthday_.jpg" alt="Happy Birthday App" onclick="openModal('happy-birthday-modal')">
                             <p>Happy Birthday App - <span class="bold">Java, Android</span></p>
@@ -183,23 +184,18 @@
                         </div>
                         <div class="image-item">
                             <img src="images/Restaurant Website.gif" alt="Restaurant App" onclick="openModal('restaurant-app-modal')">
-                            <p>Restaurant App <span class="bold">React, HTML, CSS</span></p> 
+                            <p>Restraunt App <span class="bold">React, HTML, CSS</span></p> 
                         </div>
+                        <div id="restaurant-app-modal" class="modal">
+                            <span class="close" onclick="closeModal('restaurant-app-modal')">&times;</span>
+                            <img class="modal-content" id="restaurant-app-img" src="images/Restaurant Website.gif" alt="Restaurant App GIF">
+                        </div>
+                        
                     </div>
                 </section>
             </article>
 
-            
-
-                      
-                        <!-- Taco Truck -->
-                        <article id="tacotruck" class="panel">
-                            <header>
-                                <h2>Taco Truck App</h2>
-                            </header>
-                            <h3>Sign Up for Download Notification:</h3>
-                                <p>Enter your email below to be notified when the Taco Truck App is available for download!</p>
-                                <!-- Contact -->
+            <!-- Contact -->
             <article id="contact" class="panel">
                 <header>
                     <h2>Contact Me</h2>
@@ -218,47 +214,91 @@
             </article>
 
         </div>
-                            <section>
-                                <p>Welcome to the Find ESSJ Taco Truck App! This application helps users find the nearest taco trucks and check their location. It's built with <span class="bold">React Native</span> and provides a user-friendly experience for taco lovers.</p>
-                                <h3>About the App:</h3>
-                                <p>The Taco Truck App is designed to make it easier for users to discover delicious taco options near them. With real-time location, users can quickly find taco trucks. Our goal is to connect taco lovers with the best local food trucks and enhance their dining experience.</p>
-                                
-                                <h3>Features:</h3>
-                                <ul>
-                                    <li>Real-time location of taco trucks</li>
-                                    <!-- <li>Menu browsing for each truck</li> -->
-                                    <!-- <li>User reviews and ratings for each taco truck</li> -->
-                                    <!-- <li>Favorites list to save preferred taco trucks</li> -->
-                                </ul>
-                                
-                                <h3>Technologies Used:</h3>
-                                <p>This app is developed using:</p>
-                                <ul>
-                                    <li><span class="bold">React Native</span> for mobile app development</li>
-                                    <li><span class="bold">Google Maps API</span> for location services</li>
-                                </ul>
-                                
-                                
 
-                            </section>
-                        </article>
-            
-                        <!-- Footer -->
-                        <div id="footer">
-                            <ul class="copyright">
-                                <li>&copy; Rosa Perez.</li>
-                            </ul>
-                        </div>
-            
-            
-                    <!-- Scripts -->
-                    <script src="assets/js/jquery.min.js"></script>
-                    <script src="assets/js/browser.min.js"></script>
-                    <script src="assets/js/breakpoints.min.js"></script>
-                    <script src="assets/js/util.js"></script>
-                    <script src="assets/js/main.js"></script>
-            
-                </body>
-            
-            </html>
-            
+        <!-- Footer -->
+        <div id="footer">
+            <ul class="copyright">
+                <li>&copy; Rosa Perez.</li>
+            </ul>
+        </div>
+
+    </div>
+
+       <!-- Modals -->
+       <div id="books-app-modal" class="modal">
+        <span class="close" onclick="closeModal('books-app-modal')">&times;</span>
+        <img class="modal-content" id="books-app-img" src="images/Inventory Books App.gif" alt="Books App GIF">
+    </div>
+
+    <div id="just-java-modal" class="modal">
+        <span class="close" onclick="closeModal('just-java-modal')">&times;</span>
+        <img class="modal-content" id="just-java-img" src="images/Android JustJava gif recording .gif" alt="Android Coffee Ordering GIF">
+    </div>
+
+    <div id="frida-modal" class="modal">
+        <span class="close" onclick="closeModal('frida-modal')">&times;</span>
+        <img class="modal-content" id="frida-img" src="images/Android_frida.png" alt="Frida Kahlo Android App">
+    </div>
+
+    <div id="tip-calculator-modal" class="modal">
+        <span class="close" onclick="closeModal('tip-calculator-modal')">&times;</span>
+        <img class="modal-content" id="tip-calculator-img" src="images/TipCalculator2.gif" alt="Tip Calculator iOS App GIF">
+    </div>
+
+    <div id="search-box-modal" class="modal">
+        <span class="close" onclick="closeModal('search-box-modal')">&times;</span>
+        <img class="modal-content" id="search-box-img" src="images/search-box3.gif" alt="Search Box GIF">
+    </div>
+
+    <div id="onboarding-modal" class="modal">
+        <span class="close" onclick="closeModal('onboarding-modal')">&times;</span>
+        <img class="modal-content" id="onboarding-img" src="images/onboarding.gif" alt="Onboarding GIF">
+    </div>
+
+    <div id="happy-birthday-modal" class="modal">
+        <span class="close" onclick="closeModal('happy-birthday-modal')">&times;</span>
+        <img class="modal-content" id="happy-birthday-img" src="images/HappyBirthday_.jpg" alt="Happy Birthday App">
+    </div>
+
+    <div id="guidr-nav-modal" class="modal">
+        <span class="close" onclick="closeModal('guidr-nav-modal')">&times;</span>
+        <img class="modal-content" id="guidr-nav-img" src="images/Guidr_nav.png" alt="Guidr Navigation">
+    </div>
+
+    <div id="guidr-about-modal" class="modal">
+        <span class="close" onclick="closeModal('guidr-about-modal')">&times;</span>
+        <img class="modal-content" id="guidr-about-img" src="images/Guidr_about.png" alt="Guidr About">
+    </div>
+
+    <div id="guidr-app-modal" class="modal">
+        <span class="close" onclick="closeModal('guidr-app-modal')">&times;</span>
+        <img class="modal-content" id="guidr-app-img" src="images/Guidr_and_README_md_—_UI-Rosa-Perez_and_Slack_-_Lambda_School_Students.png" alt="Gruidr: A Tour Scheduling App">
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        // Close modal when clicking outside of the image
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal(event.target.id);
+            }
+        };
+    </script>
+
+</body>
+
+</html>
