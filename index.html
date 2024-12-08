@@ -1,116 +1,215 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
+
+<head>
     <title>Rosa Perez Portfolio</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/Styles.css" />
-    <!-- Link to your new CSS file -->
+    <link rel="stylesheet" href="assets/css/Styles.css" /> <!-- Link to your new CSS file -->
     <noscript>
-      <link rel="stylesheet" href="assets/css/noscript.css" />
+        <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
-  </head>
+</head>
 
-  <body class="is-preload">
+
+<body class="is-preload">
+
     <!-- Wrapper -->
     <div id="wrapper">
-      <!-- Nav -->
-      <nav id="nav">
-        <a href="#" class="icon fa-home"><span>Home</span></a>
-        <a href="#work" class="icon fa-folder"><span>Work</span></a>
-        <a href="#taco" class="icon fa-truck"><span>Taco Truck</span></a>
-        <a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-        <a href="https://github.com/paintedlbird7" class="icon fa-github"><span>Github</span></a>
-      </nav>
 
-      <!-- Main -->
-      <div id="main">
-        <!-- Me -->
-        <article id="home" class="panel intro">
-          <div id="header"></div>
-          <a href="#work" class="jumplink pic">
-            <span class="arrow icon fa-chevron-right"><span>See my work</span></span>
-          </a>
-        </article>
+        <!-- Nav -->
+        <nav id="nav">
+            <a href="#" class="icon fa-home"><span>Home</span></a>
+            <a href="#work" class="icon fa-folder"><span>Work</span></a>
+            <a href="#taco" class="icon fa-truck"><span>Taco Truck</span></a>
+            <a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+            <a href="https://github.com/paintedlbird7" class="icon fa-github"><span>Github</span></a>
+        </nav>
 
-        <!-- Work -->
-        <article id="work" class="panel">
-          <header>
-            <h4>Rosa Perez: Software Engineer (React Native)</h4>
-          </header>
-          <section>
-            <div class="image-grid">
-              <!-- Work items omitted for brevity -->
-              <!-- You can keep your work items here (Search-Box, Onboarding, Books App, etc.) -->
-            </div>
-          </section>
-        </article>
+        <!-- Main -->
+        <div id="main">
 
-        <!-- Taco Truck -->
-        <article id="taco" class="panel">
-          <header>
-            <h2>It's here ...</h2>
-            <p>We're working hard to bring you Find Taco Trucks. Stay tuned for updates!</p>
-          </header>
-          <p>
-            In the meantime, download the app:
-          </p>
-          <p>
-            <a href="https://apps.apple.com/us/app/rosas-find-sj-taco-truck/id6737158564" target="_blank">
-              <img src="images/en-us.svg" alt="Download on the App Store" style="height: 50px;"/>
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.paintedlbird7.Rosa" target="_blank">
-              <img src="images/google-play-badge.png" alt="Get it on Google Play" style="height: 50px;"/>
-            </a>
-          </p>
-          <script
-            type="text/javascript"
-            src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-            data-name="bmc-button"
-            data-slug="rosaperezlr"
-            data-color="#FFDD00"
-            data-emoji=""
-            data-font="Cookie"
-            data-text="Buy me a coffee"
-            data-outline-color="#000000"
-            data-font-color="#000000"
-            data-coffee-color="#ffffff"
-          ></script>
-        </article>
+            <!-- Me -->
+            <article id="home" class="panel intro">
+                <header>
+                    <img src="images/RP_my_logo.jpg" alt="Rosa Perez Logo" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+                    <h1>Rosa Perez</h1>
+                    <p></p>
+                </header>
 
-        <!-- Contact -->
-        <article id="contact" class="panel">
-          <header>
-            <h2>Contact Me</h2>
-          </header>
-          <form action="https://formspree.io/f/xyzgqpjb" method="POST">
-            <label>
-              Your email:
-              <input type="email" name="email" required />
-            </label>
-            <label>
-              Your message:
-              <textarea name="message" required></textarea>
-            </label>
-            <button type="submit">Send</button>
-          </form>
-        </article>
-      </div>
+                <a href="#work" class="jumplink pic">
+                    <span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+                </a>
+            </article>
 
-      <!-- Footer -->
-      <div id="footer">
-        <ul class="copyright">
-          <li>&copy; Rosa Perez.</li>
-        </ul>
-      </div>
+            <!-- Work -->
+            <article id="work" class="panel">
+                <header>
+                    <h4>Rosa Perez: Software Engineer(React Native)</h4>
+            
+                </header>
+                <section>
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="images/search-box3.gif" alt="Search Box" onclick="openModal('search-box-modal')">
+                            <p>Search-Box - <span class="bold">JavaScript, React Native</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/onboarding.gif" alt="Onboarding" onclick="openModal('onboarding-modal')">
+                            <p>Onboarding - <span class="bold">JavaScript, React Native</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Inventory_Books_App_.png" alt="Android Books App" onclick="openModal('books-app-modal')">
+                            <p>Android Books App - <span class="bold">Java, XML, Android Studio</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Inventory Books App.gif" alt="Books App GIF" onclick="openModal('books-app-gif-modal')">
+                            <p>Books App GIF - <span class="bold">Java, XML, Android Studio</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Android JustJava gif recording .gif" alt="Android Coffee Ordering" onclick="openModal('just-java-modal')">
+                            <p>Android Coffee Ordering - <span class="bold">Java, Android</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Android_frida.png" alt="Frida Kahlo Android App" onclick="openModal('frida-modal')">
+                            <p>Frida Kahlo Android App - <span class="bold">Java, XML, Android Studio</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/TipCalculator2.gif" alt="Tip Calculator iOS App" onclick="openModal('tip-calculator-modal')">
+                            <p>Tip Calculator iOS App - <span class="bold">Swift, Xcode</span></p>
+                        </div>
+                    
+                        <div class="image-item">
+                            <img src="images/HappyBirthday_.jpg" alt="Happy Birthday App" onclick="openModal('happy-birthday-modal')">
+                            <p>Happy Birthday App - <span class="bold">Java, Android</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Guidr_nav.png" alt="Guidr Navigation" onclick="openModal('guidr-nav-modal')">
+                            <p>Guidr Navigation - <span class="bold">React, HTML, CSS</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Guidr_about.png" alt="Guidr About" onclick="openModal('guidr-about-modal')">
+                            <p>Guidr About - <span class="bold">React</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Guidr_and_README_md_—_UI-Rosa-Perez_and_Slack_-_Lambda_School_Students.png" alt="Gruidr: A Tour Scheduling App" onclick="openModal('guidr-app-modal')">
+                            <p>Gruidr: A tour scheduling for Tour Guides - <span class="bold">React, HTML, CSS</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Restaurant Website.gif" alt="Restaurant App" onclick="openModal('restaurant-app-modal')">
+                            <p>Restraunt App <span class="bold">React, HTML, CSS</span></p> 
+                        </div>
+                        <div id="restaurant-app-modal" class="modal">
+                            <span class="close" onclick="closeModal('restaurant-app-modal')">&times;</span>
+                            <img class="modal-content" id="restaurant-app-img" src="images/Restaurant Website.gif" alt="Restaurant App GIF">
+                        </div>
+                        
+                    </div>
+                </section>
+            </article>
+
+            <!-- Taco Truck -->
+            <article id="taco" class="panel">
+                <header>
+                    <h2>It's here ...</h2>
+                    <p>We're working hard to bring you Find Taco Trucks. Stay tuned for updates!</p>
+                </header>
+                <p>
+                  In the meantime, download the app:
+                </p>
+                <p>
+                  <a href="https://apps.apple.com/us/app/rosas-find-sj-taco-truck/id6737158564" target="_blank">
+                    <img src="images/en-us.svg" alt="Download on the App Store" style="height: 50px;"/>
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.paintedlbird7.Rosa" target="_blank">
+                    <img src="images/google-play-badge.png" alt="Get it on Google Play" style="height: 50px;"/>
+                  </a>
+                </p>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="rosaperezlr" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+                
+            </article>
+
+            <!-- Contact -->
+            <article id="contact" class="panel">
+                <header>
+                    <h2>Contact Me</h2>
+                </header>
+                <form action="https://formspree.io/f/xyzgqpjb" method="POST">
+                    <label>
+                        Your email:
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        Your message:
+                        <textarea name="message" required></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+            </article>
+
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <ul class="copyright">
+                <li>&copy; Rosa Perez.</li>
+            </ul>
+        </div>
+
     </div>
 
-    <!-- Modals -->
-    <!-- Modals for work items omitted for brevity -->
+       <!-- Modals -->
+       <div id="books-app-modal" class="modal">
+        <span class="close" onclick="closeModal('books-app-modal')">&times;</span>
+        <img class="modal-content" id="books-app-img" src="images/Inventory Books App.gif" alt="Books App GIF">
+    </div>
+    
+
+    <div id="just-java-modal" class="modal">
+        <span class="close" onclick="closeModal('just-java-modal')">&times;</span>
+        <img class="modal-content" id="just-java-img" src="images/Android JustJava gif recording .gif" alt="Android Coffee Ordering GIF">
+    </div>
+
+    <div id="frida-modal" class="modal">
+        <span class="close" onclick="closeModal('frida-modal')">&times;</span>
+        <img class="modal-content" id="frida-img" src="images/Android_frida.png" alt="Frida Kahlo Android App">
+    </div>
+
+    <div id="tip-calculator-modal" class="modal">
+        <span class="close" onclick="closeModal('tip-calculator-modal')">&times;</span>
+        <img class="modal-content" id="tip-calculator-img" src="images/TipCalculator2.gif" alt="Tip Calculator iOS App GIF">
+    </div>
+
+    <div id="search-box-modal" class="modal">
+        <span class="close" onclick="closeModal('search-box-modal')">&times;</span>
+        <img class="modal-content" id="search-box-img" src="images/search-box3.gif" alt="Search Box GIF">
+    </div>
+
+    <div id="onboarding-modal" class="modal">
+        <span class="close" onclick="closeModal('onboarding-modal')">&times;</span>
+        <img class="modal-content" id="onboarding-img" src="images/onboarding.gif" alt="Onboarding GIF">
+    </div>
+
+    <div id="happy-birthday-modal" class="modal">
+        <span class="close" onclick="closeModal('happy-birthday-modal')">&times;</span>
+        <img class="modal-content" id="happy-birthday-img" src="images/HappyBirthday_.jpg" alt="Happy Birthday App">
+    </div>
+
+    <div id="guidr-nav-modal" class="modal">
+        <span class="close" onclick="closeModal('guidr-nav-modal')">&times;</span>
+        <img class="modal-content" id="guidr-nav-img" src="images/Guidr_nav.png" alt="Guidr Navigation">
+    </div>
+
+    <div id="guidr-about-modal" class="modal">
+        <span class="close" onclick="closeModal('guidr-about-modal')">&times;</span>
+        <img class="modal-content" id="guidr-about-img" src="images/Guidr_about.png" alt="Guidr About">
+    </div>
+
+    <div id="guidr-app-modal" class="modal">
+        <span class="close" onclick="closeModal('guidr-app-modal')">&times;</span>
+        <img class="modal-content" id="guidr-app-img" src="images/Guidr_and_README_md_—_UI-Rosa-Perez_and_Slack_-_Lambda_School_Students.png" alt="Gruidr: A Tour Scheduling App">
+    </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -118,35 +217,24 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="ContactForm.js"></script>
 
     <script>
-      // Modal open/close functionality
-      function openModal(modalId) {
-        document.getElementById(modalId).style.display = "block";
-      }
-
-      function closeModal(modalId) {
-        document.getElementById(modalId).style.display = "none";
-      }
-
-      // Close modal when clicking outside of the image
-      window.onclick = function (event) {
-        if (event.target.classList.contains("modal")) {
-          closeModal(event.target.id);
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
         }
-      };
 
-      // Inject header HTML directly into the page
-      document.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("header").innerHTML = `
-            <header>
-                <img src="images/RP_my_logo.jpg" alt="Rosa Perez Logo" style="max-width: 100%; height: auto; margin-bottom: 10px;">
-                <h1>Rosa Perez</h1>
-                <p>Software Engineer</p>
-            </header>
-        `;
-      });
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        // Close modal when clicking outside of the image
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal(event.target.id);
+            }
+        };
     </script>
-  </body>
+
+</body>
+
 </html>
