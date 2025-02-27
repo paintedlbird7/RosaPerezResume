@@ -46,18 +46,30 @@
             <!-- Work -->
             <article id="work" class="panel">
                 <header>
-                    <h4>Rosa Pérez: Software Engineer (React Native)</h4>
+                    <h4>Rosa Pérez: Software Engineer (Web & React Native)</h4>
             
                 </header>
                 <section>
                     <div class="image-grid">
+                        <div class="image-item">
+                            <img src="images/QuizLandingPage.png" alt="Quiz" onclick="openModal('quiz-modal')">
+                            <p>Quiz - <span class="bold">HTML, CSS, JavaScript</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Quiz.png" alt="Quiz" onclick="openModal('quiz2-modal')">
+                            <p>Quiz2 - <span class="bold">HTML, CSS, JavaScript</span></p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/Quizwin.png" alt="Quiz" onclick="openModal('quiz3-modal')">
+                            <p>Quiz3 - <span class="bold">HTML, CSS, JavaScript</span></p>
+                        </div>
                         <div class="image-item">
                             <img src="images/search-box3.gif" alt="Search Box" onclick="openModal('search-box-modal')">
                             <p>Search-Box - <span class="bold">JavaScript, React Native</span></p>
                         </div>
                         <div class="image-item">
                             <img src="images/onboarding.gif" alt="Onboarding" onclick="openModal('onboarding-modal')">
-                            <p>Onboarding - <span class="bold">JavaScript, React Native</span></p>
+                            <p>Onboarding - <span class="bold">HTML, CSS, JavaScript</span></p>
                         </div>
                         <div class="image-item">
                             <img src="images/Inventory_Books_App_.png" alt="Android Books App" onclick="openModal('books-app-modal')">
@@ -113,7 +125,7 @@
             <article id="taco" class="panel">
                 <header>
                     <h2>It's here ...</h2>
-                    <p>We're working hard to bring you Find Taco Trucks. Stay tuned for updates!</p>
+                    <p>We're working hard to brinStay tuned for updates!</p>
                 </header>
                 <p>
                   In the meantime, download the app:
@@ -160,6 +172,19 @@
     </div>
 
        <!-- Modals -->
+       <div id="quiz-modal" class="modal">
+        <span class="close" onclick="closeModal('quiz-modal')">&times;</span>
+        <img class="modal-content" id="quiz-img" src="images/QuizLandingPage.png" alt="Quiz App">
+    </div>
+    <div id="quiz2-modal" class="modal">
+        <span class="close" onclick="closeModal('quiz2-modal')">&times;</span>
+        <img class="modal-content" id="quiz2-img" src="images/Quiz.png" alt="Quiz2 App">
+    </div>
+    <div id="quiz3-modal" class="modal">
+        <span class="close" onclick="closeModal('quiz3-modal')">&times;</span>
+        <img class="modal-content" id="quiz3-img" src="images/Quizwin.png" alt="Quiz3 App">
+    </div>
+
        <div id="books-app-modal" class="modal">
         <span class="close" onclick="closeModal('books-app-modal')">&times;</span>
         <img class="modal-content" id="books-app-img" src="images/Inventory Books App.gif" alt="Books App GIF">
