@@ -51,82 +51,118 @@
                 </header>
                 <section>
                     <div class="image-grid">
-                        <div class="image-item">
-                            <img src="images/QuizLandingPage.png" alt="Quiz" onclick="openModal('quiz-modal')">
-                            <p>Quiz - <span class="bold">HTML, CSS, JavaScript</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/Quiz.png" alt="Quiz" onclick="openModal('quiz2-modal')">
-                            <p>Quiz2 - <span class="bold">HTML, CSS, JavaScript</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/Quizwin.png" alt="Quiz" onclick="openModal('quiz3-modal')">
-                            <p>Quiz3 - <span class="bold">HTML, CSS, JavaScript</span></p>
-                        </div>
-                        <!-- <div class="image-grid"> -->
-                            <div class="image-item">
-                                <img src="images/LandingPage.png" alt="Dichos" onclick="openModal('dichos-modal')">
+
+
+                        <!-- <div class="image-grid">
+                            <div class="card image-item">
+                              <img src="images/QuizLandingPage.png" alt="Quiz" onclick="openModal('quiz-modal')">
+                              <div class="card-content">
+                                <h4>Quiz</h4>
+                                <p><span class="bold">HTML, CSS, JavaScript</span></p>
+                              </div>
+                            </div> -->
+
+
+                        <div class="image-grid">
+                            <div class="card image-item">
+                              <img src="images/LandingPage.png" alt="Dichos" onclick="openModal('dichos-modal')">
+                              <div class="card-content">
                                 <p>Dichos - <span class="bold">JavaScript, MongoDB</span></p>
+                              </div>
                             </div>
-                            <!-- <div class="image-grid"> -->
-                                <div class="image-item">
-                                    <img src="images/HomePage.png" alt="Dichos2" onclick="openModal('dichos2-modal')">
-                                    <p>Dichos - <span class="bold">JavaScript, MongoDB</span></p>
-                                </div>
-                        <div class="image-item">
-                            <img src="images/search-box3.gif" alt="Search Box" onclick="openModal('search-box-modal')">
-                            <p>Search-Box - <span class="bold">JavaScript, React Native</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/onboarding.gif" alt="Onboarding" onclick="openModal('onboarding-modal')">
-                            <p>Onboarding - <span class="bold">HTML, CSS, JavaScript</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/Inventory_Books_App_.png" alt="Android Books App" onclick="openModal('books-app-modal')">
-                            <p>Android Books App - <span class="bold">Java, XML, Android Studio</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/Inventory Books App.gif" alt="Books App GIF" onclick="openModal('books-app-gif-modal')">
-                            <p>Books App GIF - <span class="bold">Java, XML, Android Studio</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/Android JustJava gif recording .gif" alt="Android Coffee Ordering" onclick="openModal('just-java-modal')">
-                            <p>Android Coffee Ordering - <span class="bold">Java, Android</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/Android_frida.png" alt="Frida Kahlo Android App" onclick="openModal('frida-modal')">
-                            <p>Frida Kahlo Android App - <span class="bold">Java, XML, Android Studio</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/TipCalculator2.gif" alt="Tip Calculator iOS App" onclick="openModal('tip-calculator-modal')">
-                            <p>Tip Calculator iOS App - <span class="bold">Swift, Xcode</span></p>
-                        </div>
-                    
-                        <div class="image-item">
-                            <img src="images/HappyBirthday_.jpg" alt="Happy Birthday App" onclick="openModal('happy-birthday-modal')">
-                            <p>Happy Birthday App - <span class="bold">Java, Android</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/Guidr_nav.png" alt="Guidr Navigation" onclick="openModal('guidr-nav-modal')">
-                            <p>Guidr Navigation - <span class="bold">React, HTML, CSS</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/Guidr_about.png" alt="Guidr About" onclick="openModal('guidr-about-modal')">
-                            <p>Guidr About - <span class="bold">React</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/Guidr_and_README_md_—_UI-Rosa-Perez_and_Slack_-_Lambda_School_Students.png" alt="Gruidr: A Tour Scheduling App" onclick="openModal('guidr-app-modal')">
-                            <p>Gruidr: A tour scheduling for Tour Guides - <span class="bold">React, HTML, CSS</span></p>
-                        </div>
-                        <div class="image-item">
-                            <img src="images/Restaurant Website.gif" alt="Restaurant App" onclick="openModal('restaurant-app-modal')">
-                            <p>Restraunt App <span class="bold">React, HTML, CSS</span></p> 
-                        </div>
-                        <div id="restaurant-app-modal" class="modal">
-                            <span class="close" onclick="closeModal('restaurant-app-modal')">&times;</span>
-                            <img class="modal-content" id="restaurant-app-img" src="images/Restaurant Website.gif" alt="Restaurant App GIF">
-                        </div>
-                        
+                          
+                            <div class="card image-item">
+                              <img src="images/HomePage.png" alt="Dichos" onclick="openModal('dichos-modal')">
+                              <div class="card-content">
+                                <p>Dichos - <span class="bold">JavaScript, MongoDB</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/search-box3.gif" alt="Search Box" onclick="openModal('search-box-modal')">
+                              <div class="card-content">
+                                <p>Search-Box - <span class="bold">JavaScript, React Native</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/onboarding.gif" alt="Onboarding" onclick="openModal('onboarding-modal')">
+                              <div class="card-content">
+                                <p>Onboarding - <span class="bold">HTML, CSS, JavaScript</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/Inventory_Books_App_.png" alt="Android Books App" onclick="openModal('books-app-modal')">
+                              <div class="card-content">
+                                <p>Android Books App - <span class="bold">Java, XML, Android Studio</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/Inventory Books App.gif" alt="Books App GIF" onclick="openModal('books-app-gif-modal')">
+                              <div class="card-content">
+                                <p>Books App GIF - <span class="bold">Java, XML, Android Studio</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/Android JustJava gif recording .gif" alt="Android Coffee Ordering" onclick="openModal('just-java-modal')">
+                              <div class="card-content">
+                                <p>Android Coffee Ordering - <span class="bold">Java, Android</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/Android_frida.png" alt="Frida Kahlo Android App" onclick="openModal('frida-modal')">
+                              <div class="card-content">
+                                <p>Frida Kahlo Android App - <span class="bold">Java, XML, Android Studio</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/TipCalculator2.gif" alt="Tip Calculator iOS App" onclick="openModal('tip-calculator-modal')">
+                              <div class="card-content">
+                                <p>Tip Calculator iOS App - <span class="bold">Swift, Xcode</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/HappyBirthday_.jpg" alt="Happy Birthday App" onclick="openModal('happy-birthday-modal')">
+                              <div class="card-content">
+                                <p>Happy Birthday App - <span class="bold">Java, Android</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/Guidr_nav.png" alt="Guidr Navigation" onclick="openModal('guidr-nav-modal')">
+                              <div class="card-content">
+                                <p>Guidr Navigation - <span class="bold">React, HTML, CSS</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/Guidr_about.png" alt="Guidr About" onclick="openModal('guidr-about-modal')">
+                              <div class="card-content">
+                                <p>Guidr About - <span class="bold">React</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/Guidr_and_README_md_—_UI-Rosa-Perez_and_Slack_-_Lambda_School_Students.png" alt="Gruidr App" onclick="openModal('guidr-app-modal')">
+                              <div class="card-content">
+                                <p>Gruidr: A tour scheduling for Tour Guides - <span class="bold">React, HTML, CSS</span></p>
+                              </div>
+                            </div>
+                          
+                            <div class="card image-item">
+                              <img src="images/Restaurant Website.gif" alt="Restaurant App" onclick="openModal('restaurant-app-modal')">
+                              <div class="card-content">
+                                <p>Restaurant App - <span class="bold">React, HTML, CSS</span></p>
+                              </div>
+                            </div>
+                          </div>
+                          
                     </div>
                 </section>
             </article>
